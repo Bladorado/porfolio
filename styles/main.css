@@ -1,6 +1,6 @@
 *{
+    margin: 0;
     padding: 0;
-    border: 0;
     box-sizing: border-box;
 }
 
@@ -59,4 +59,39 @@
     background-color: blueviolet;
     font-size: 20em;
    
+}
+
+.box-img-tex{
+    display: flex;
+    background-color: azure;
+    align-items: center;
+    border: 4px solid gray;
+}
+
+.tex-about{
+    text-align: center;
+    padding: 0.5em;
+}
+
+.notebook{
+    width: 40em;
+}
+.box-note {
+    
+}
+
+.folder{
+    width: 35em;
+}
+
+.box-proye{
+    background-color: aliceblue;
+}
+.box-carp{
+    display: flex;
+    justify-content: space-around;
+}
+.tex-proye{
+    text-align: center;
+    padding: 0.5em;
 }

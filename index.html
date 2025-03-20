@@ -9,81 +9,85 @@
 </head>
 
 <body>
-    <header>
-        <nav class="menu">
-            <ul class="nav-left nav-comun">
-                <li><a href="#about">Sobre mí</a></li>
-                <li><a href="#projects">Proyectos</a></li>
-            </ul>
-            <div class="logo">
-                <a href="#"><img src="./assets/images/Logo Dorado.png" alt="Logo"></a>
-            </div>
-            <ul class="nav-right nav-comun">
-                <li><a href="#services">Servicios</a></li>
-                <li><a href="#contact">Contacto</a></li>
-            </ul>
-        </nav>
-        <section class="box-header">
-            <div class="img-arc">
-                <img src="/assets/images/file.png" alt="">
-            </div>
-            <div class="box-four">
-                <p class="di-404">404</p>
+    <div class="contenedor">
+        <header class="cont-header">
+            <nav class="menu">
+                <ul class="nav-left nav-comun">
+                    <li><a href="#about">Sobre mí</a></li>
+                    <li><a href="#projects">Proyectos</a></li>
+                </ul>
+                <div class="logo">
+                    <a href="#"><img src="./assets/images/Logo Dorado.png" alt="Logo"></a>
+                </div>
+                <ul class="nav-right nav-comun">
+                    <li><a href="#services">Servicios</a></li>
+                    <li><a href="#contact">Contacto</a></li>
+                </ul>
+            </nav>
+            <section class="box-header">
+                <div class="img-arc">
+                    <img src="/assets/images/file.png" alt="">
+                </div>
+                <div class="box-four">
+                    <p class="di-404">404</p>
+                </div>
+            </section>
+        </header>
+        <section class="box-about">
+            <h2 class="tex-about">Sobre mí</h2>
+            <article class="box-img-tex">
+                <div class="box-note">
+                    <img class="notebook" src="/assets/images/notebook.png" alt="notebook">
+                </div>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi consectetur dolorum optio porro odit
+                    reprehenderit, molestias necessitatibus cupiditate voluptas voluptatibus officiis officia
+                    praesentium
+                    tempore. Perferendis laborum dolores iusto totam quos!
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta non velit facilis odit delectus
+                    voluptatibus necessitatibus accusantium soluta voluptatum aspernatur distinctio praesentium porro,
+                    provident cum repellendus sapiente totam saepe. Reiciendis!
+                </p>
+            </article>
+        </section>
+        <section class="box-proye">
+            <h2 class="tex-proye">Proyectos</h2>
+            <div class="box-carp">
+                <img class="folder" src="/assets/images/folder.png" alt="folder">
+                <img class="folder" src="/assets/images/folder.png" alt="folder">
+                <img class="folder" src="/assets/images/folder.png" alt="folder">
             </div>
         </section>
-    </header>
-    <section class="box-about">
-        <h2 class="tex-about">Sobre mí</h2>
-        <article class="box-img-tex">
-            <div class="box-note">
-                <img class="notebook" src="/assets/images/notebook.png" alt="notebook">
+        <section class="box-serv">
+            <h2 class="tex-proye">Servicios</h2>
+            <div class="box-carp">
+                <img class="folder" src="/assets/images/guia.png" alt="guia">
+                <img class="folder" src="/assets/images/guia.png" alt="guia">
+                <img class="folder" src="/assets/images/guia.png" alt="guia">
             </div>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi consectetur dolorum optio porro odit
-                reprehenderit, molestias necessitatibus cupiditate voluptas voluptatibus officiis officia praesentium
-                tempore. Perferendis laborum dolores iusto totam quos!
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta non velit facilis odit delectus
-                voluptatibus necessitatibus accusantium soluta voluptatum aspernatur distinctio praesentium porro,
-                provident cum repellendus sapiente totam saepe. Reiciendis!
-            </p>
-        </article>
-    </section>
-    <section class="box-proye">
-        <h2 class="tex-proye">Proyectos</h2>
-        <div class="box-carp">
-            <img class="folder" src="/assets/images/folder.png" alt="folder">
-            <img class="folder" src="/assets/images/folder.png" alt="folder">
-            <img class="folder" src="/assets/images/folder.png" alt="folder">
-        </div>
-    </section>
-    <section class="box-serv">
-        <h2 class="tex-proye">Servicios</h2>
-        <div class="box-carp">
-            <img class="folder" src="/assets/images/guia.png" alt="guia">
-            <img class="folder" src="/assets/images/guia.png" alt="guia">
-            <img class="folder" src="/assets/images/guia.png" alt="guia">
-        </div>
-    </section>
-    <section class="contacto-formulario">
-        <h3>Contacto</h3>
-        <form action="enviar-contacto.php" method="post">
-            <div>
-                <label for="nombre">Nombre</label>
-                <input type="text" id="nombre" name="nombre" required placeholder="Tu nombre completo">
-            </div>
+        </section>
+        <section class="contacto-formulario">
+            <h3>Contacto</h3>
+            <form action="enviar-contacto.php" method="post">
+                <div>
+                    <label for="nombre">Nombre</label>
+                    <input type="text" id="nombre" name="nombre" required placeholder="Tu nombre completo">
+                </div>
 
-            <div>
-                <label for="email">Correo electrónico</label>
-                <input type="email" id="email" name="email" required placeholder="Tu correo electrónico">
-            </div>
+                <div>
+                    <label for="email">Correo electrónico</label>
+                    <input type="email" id="email" name="email" required placeholder="Tu correo electrónico">
+                </div>
 
-            <div>
-                <label for="mensaje">Mensaje</label>
-                <textarea id="mensaje" name="mensaje" rows="5" required placeholder="Escribe tu mensaje..."></textarea>
-            </div>
+                <div>
+                    <label for="mensaje">Mensaje</label>
+                    <textarea id="mensaje" name="mensaje" rows="5" required
+                        placeholder="Escribe tu mensaje..."></textarea>
+                </div>
 
-            <button type="submit">Enviar mensaje</button>
-        </form>
-    </section>
+                <button type="submit">Enviar mensaje</button>
+            </form>
+        </section>
+    </div>
 </body>
 
 </html>

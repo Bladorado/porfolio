@@ -26,8 +26,9 @@
 
 .nav-comun a{
     text-decoration: none;
-    padding: 0.5em;
-    border: 1px solid rgb(34, 0, 128);
+    
+    color: black;
+    
 }
 
 .nav-left{
@@ -59,12 +60,20 @@
 
 .img-arc{
     border: 1px solid palevioletred;
-    width: 45em;
+    
     
 }
 
+.btn{
+    padding: 2.5em;
+    background-image: url('/assets/images/post.png');
+    background-size: cover;       /* ajusta la imagen al contenedor */
+    background-position: center;  /* centra la imagen */
+    background-repeat: no-repeat; /* evita que se repita */
+}
+
 .img-arc img{
-    width: 50%;
+    width: 50em;
  
 }
 .box-four{

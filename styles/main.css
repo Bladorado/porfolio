@@ -1,25 +1,47 @@
+<<<<<<< HEAD
 *{
+=======
+* {
+>>>>>>> 3d37666d6604b155b9316bf8dbffa0e9de2d8d42
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+<<<<<<< HEAD
 .contenedor{
+=======
+.contenedor {
+>>>>>>> 3d37666d6604b155b9316bf8dbffa0e9de2d8d42
     border: 1px solid rgba(0, 0, 0, 0.247);
     margin-left: 4em;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 /* Estilo parte de header Home */
+<<<<<<< HEAD
 .cont-header{
     border: 4px solid rgb(255, 145, 0);
 }
 
 .menu{
+=======
+.cont-header {
+    width: calc(100% + 4em);
+    margin-left: -4em;
+
+    border-bottom: 1px solid #000;
+
+    padding-left: 2em;
+}
+
+.menu {
+>>>>>>> 3d37666d6604b155b9316bf8dbffa0e9de2d8d42
     display: flex;
     justify-content: space-between;
 }
 
+<<<<<<< HEAD
 .nav-comun{
     border: 3px solid red;
 }
@@ -31,6 +53,17 @@
 }
 
 .nav-left{
+=======
+.nav-comun {}
+
+.nav-comun a {
+    text-decoration: none;
+    color: black;
+
+}
+
+.nav-left {
+>>>>>>> 3d37666d6604b155b9316bf8dbffa0e9de2d8d42
     width: 100%;
     display: flex;
     align-items: center;
@@ -38,6 +71,7 @@
     justify-content: space-around;
 }
 
+<<<<<<< HEAD
 .logo img{
     width: 5em;
 }
@@ -46,10 +80,22 @@
     width: 100%;
     display: flex;
     align-items: center; 
+=======
+.logo img {
+    width: 5em;
+    margin-top: 0.5em;
+}
+
+.nav-right {
+    width: 100%;
+    display: flex;
+    align-items: center;
+>>>>>>> 3d37666d6604b155b9316bf8dbffa0e9de2d8d42
     list-style: none;
     justify-content: space-around;
 }
 
+<<<<<<< HEAD
 .box-header{
     display: flex;
     justify-content: space-around;
@@ -68,11 +114,43 @@
  
 }
 .box-four{
+=======
+.box-header {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+}
+
+.img-arc {
+    border: 1px solid palevioletred;
+
+
+}
+
+.btn {
+    padding: 2.5em;
+    background-image: url('/assets/images/post.png');
+    background-size: cover;
+    /* ajusta la imagen al contenedor */
+    background-position: center;
+    /* centra la imagen */
+    background-repeat: no-repeat;
+    /* evita que se repita */
+}
+
+.img-arc img {
+    width: 50em;
+
+}
+
+.box-four {
+>>>>>>> 3d37666d6604b155b9316bf8dbffa0e9de2d8d42
     width: 50%;
     border: 1px solid rgb(92, 47, 255);
     font-size: 20em;
     margin-top: 0.3em;
     text-align: center;
+<<<<<<< HEAD
    
 }
 
@@ -83,10 +161,28 @@
 }
 
 .tex-about{
+=======
+
+}
+
+.box-about {
+    margin-left: -4em;
+    border-bottom: 1px solid #14a834;
+}
+
+.box-img-tex {
+    display: flex;
+    align-items: center;
+
+}
+
+.tex-about {
+>>>>>>> 3d37666d6604b155b9316bf8dbffa0e9de2d8d42
     text-align: center;
     padding: 0.5em;
 }
 
+<<<<<<< HEAD
 .notebook{
     width: 40em;
 }
@@ -106,15 +202,54 @@
     justify-content: space-around;
 }
 .tex-proye{
+=======
+.notebook {
+    width: 40em;
+}
+
+.box-note {}
+
+.folder {
+    width: 35em;
+}
+
+.box-proye {
+    margin-left: -4em;
+    border-bottom: 1px solid #000000;
+    background-color: aliceblue;
+}
+
+.box-serv{
+    margin-left: -4em;
+    border-bottom: 1px solid #000000;
+}
+
+
+.box-carp {
+    display: flex;
+    justify-content: space-around;
+}
+
+.tex-proye {
+>>>>>>> 3d37666d6604b155b9316bf8dbffa0e9de2d8d42
     text-align: center;
     padding: 0.5em;
 }
 
+<<<<<<< HEAD
 .title-contac{
     font-size: 9rem;
     text-align: center;
 }
 .form{
+=======
+.title-contac {
+    font-size: 9rem;
+    text-align: center;
+}
+
+.form {
+>>>>>>> 3d37666d6604b155b9316bf8dbffa0e9de2d8d42
     border: 1px solid red;
     max-width: 900px;
     margin: 0 auto;
@@ -142,6 +277,11 @@
 }
 
 .contacto-formulario {
+<<<<<<< HEAD
+=======
+    margin-left: -4em;
+    border-bottom: 1px solid #000000;
+>>>>>>> 3d37666d6604b155b9316bf8dbffa0e9de2d8d42
     padding: 40px 20px;
     max-width: 110em;
     margin: 0 auto;

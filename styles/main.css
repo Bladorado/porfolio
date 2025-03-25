@@ -14,9 +14,7 @@
 .cont-header {
     width: calc(100% + 4em);
     margin-left: -4em;
-
     border-bottom: 1px solid #000;
-
     padding-left: 2em;
 }
 
@@ -62,8 +60,6 @@
 
 .img-arc {
     border: 1px solid palevioletred;
-
-
 }
 
 .btn {
@@ -79,7 +75,6 @@
 
 .img-arc img {
     width: 50em;
-
 }
 
 .box-four {
@@ -99,7 +94,6 @@
 .box-img-tex {
     display: flex;
     align-items: center;
-
 }
 
 .tex-about {

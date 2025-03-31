@@ -149,6 +149,11 @@
 
 /* Contacto ------------------------------------------------------------------ */
 .contacto-formulario {
+  
+    background-image: url('/assets/images/contacto.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
     margin-left: -4em;
     border-bottom: 1px solid #000000;
     padding: 40px 20px;

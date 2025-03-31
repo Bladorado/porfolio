@@ -84,7 +84,7 @@
 /* Sobre mí ------------------------------------------------------------------ */
 .box-about {
     width: 100%;
-    background-color: rgba(172, 255, 47, 0.442);
+    padding: 2em;
 
 }
 
@@ -96,13 +96,13 @@
 
 .box-img-tex {
     display: flex;
-   
+    justify-content: space-evenly;
     align-items: center;
     border: 2px solid blue;
 }
 
 .box-note {
-
+    
 } 
 
 .notebook {
@@ -112,14 +112,13 @@
 .box-tex{
     width: 25em;
     padding: 2em;
-    margin-left: 35em;
+   
     background-color: #29b96f;
 }
 
 /* Mis Proyectos ------------------------------------------------------------------ */
 .box-proye {
-    border-bottom: 1px solid #000000;
-    background-color: rgb(96, 155, 207);
+    padding: 5em;
 }
 
 .tex-proye {
@@ -130,8 +129,8 @@
 .box-carp {
     display: flex;
     justify-content: space-around;
-    margin-top: 2em;
-    margin-bottom: 3em;
+   
+    
 }
 
 .folder {
@@ -140,16 +139,17 @@
 
 /* Mis Servicios ------------------------------------------------------------------ */
 .box-serv {
-    
+    padding: 3em;
 }
 
 .img-serv{
-    background-color: #2c3e5075;
+    display: flex;
+    justify-content: space-between;
 }
 
 /* Contacto ------------------------------------------------------------------ */
 .contacto-formulario {
-  
+    width: 100em;
     background-image: url('/assets/images/contacto.png');
     background-size: cover;
     background-position: center;
@@ -210,6 +210,10 @@
 .contacto-formulario button:hover {
     background-color: #2980b9;
 }
+
+/*Pagina Footer */
+
+section
 
 hr {
     border-bottom: 1px solid #abaa9e5d;

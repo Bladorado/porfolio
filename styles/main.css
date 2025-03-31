@@ -150,60 +150,76 @@
 /* Contacto ------------------------------------------------------------------ */
 .contacto-formulario {
     width: 100em;
-    background-image: url('/assets/images/contacto.png');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    margin-left: -4em;
+    margin: auto;
+    padding: 5em;
+   
     border-bottom: 1px solid #000000;
-    padding: 40px 20px;
-    max-width: 110em;
-    margin: 0 auto;
     background-color: #ffffff;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     border-radius: 10px;
+    margin-bottom: 2em;
+    margin-top: 2em;
+    background-color: #ccc;
 }
 
-.contacto-formulario h3 {
-    font-size: 5rem;
-    text-align: center;
+.contacto-text h3 {
+    font-size: 7rem;
     color: black;
-    margin-bottom: 20px;
+    background-color: #2980b9;
+    
+    
 }
 
 .form {
     border: 1px solid red;
-    max-width: 900px;
-    margin: 0 auto;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-.contacto-formulario label {
-    display: block;
-    font-size: 1.1rem;
-    color: #2c3e50;
+.box-name  {
+    display: flex;
+    font-size: 3rem;
     margin-bottom: 8px;
+    background-color: wheat;
+    
 }
 
-.contacto-formulario input,
-.contacto-formulario textarea {
+.box-name input{
+    margin-left: 2em;
     width: 100%;
-    padding: 12px;
-    font-size: 1rem;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    box-sizing: border-box;
+   
 }
+
+.box-email{
+    font-size: 3rem;
+    background-color: #29b96f;
+}
+.box-email{
+    display: flex;
+}
+
+.box-email input{
+    width: 74.6%;
+    margin-left: 0.5em;
+}
+
+.box-texta textarea{
+    width: 50%;
+}
+
+.box-texta{
+    display: flex;
+}
+
 
 .contacto-formulario button {
-    padding: 12px 20px;
+    width: 50%;
     background-color: #3498db;
     color: white;
     font-size: 1.2rem;
     border: none;
     border-radius: 5px;
     cursor: pointer;
-    width: 100%;
+   
 }
 
 
@@ -213,7 +229,56 @@
 
 /*Pagina Footer */
 
-section
+
+
+.box-footer{
+    display: flex;
+    background-color: rgba(0, 0, 0, 0.836);
+    padding: 3em;
+    justify-content: space-evenly;
+    color: #ffffff;
+
+}
+
+
+.cont-name{
+    border-right: 2px solid white;
+    padding-right: 1em;
+    display: flex;
+    align-items: center;
+
+}
+
+.list{
+    width: 25em;
+    
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+
+    
+    
+}
+
+.copy a{
+    color: #5b5454;
+    text-decoration: none;
+}
+
+.box-list{
+    
+}
+
+.cont-icons{
+    display: flex;
+    list-style-type: none;
+    justify-content: space-between;
+}
+
+.box-ico {
+   width: 2em;
+   
+}
 
 hr {
     border-bottom: 1px solid #abaa9e5d;

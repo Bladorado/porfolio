@@ -10,36 +10,34 @@
 
 <body>
     <div class="contenedor">
-        <header class="cont-header">
-            <nav class="menu">
-            <!-- <nav class="menu">
-                <ul class="nav-left nav-comun">
-                    <li class="btn"><a href="#about">Sobre mí</a></li>
-                    <li class="btn"><a href="#projects">Proyectos</a></li>
-                </ul>
+        <nav class="menu-lateral">
+            <ul class="nav-pestanas">
+                <li class="btn"><a href="#home">Home</a></li>
+                <li class="btn"><a href="#about">Sobre mí</a></li>
+                <li class="btn"><a href="#projects">Proyectos</a></li>
+                <li class="btn"><a href="#services">Servicios</a></li>
+                <li class="btn"><a href="#contact">Contacto</a></li>
+            </ul>
+        </nav>
+    
+        <!-- Contenido principal (header, sections, footer) -->
+        <div  class="contenido-principal">
+            <header id="home" class="cont-header">
+                <!-- Logo y box-header (sin el menú antiguo) -->
                 <div class="logo">
                     <a href="#"><img src="./assets/images/Logo Dorado.png" alt="Logo"></a>
                 </div>
-                <ul class="nav-right nav-comun">
-                    <li class="btn"><a href="#services">Servicios</a></li>
-                    <li class="btn"><a href="#contact">Contacto</a></li>
-                </ul>
-            </nav>
-            <section class="box-header">
-                <div class="img-arc">
-                    <img src="/assets/images/miarchivador.png" alt="">
-            </nav> -->
-            <section class="box-header">
-                <div class="img-arc">
-                    <img src="/assets/images/Recurso 7.png" alt="">
-                </div>
-                <div class="box-four">
-                    <p class="di-404">404</p>
-                </div>
-            </section>
-        </header>
+                <section class="box-header">
+                    <div class="img-arc">
+                        <img src="/assets/images/Recurso 7.png" alt="">
+                    </div>
+                    <div class="box-four">
+                        <p class="di-404">404</p>
+                    </div>
+                </section>
+            </header>
         <hr>
-        <section class="box-about">
+        <section id="about" class="box-about">
             <h2 class="tex-about">Sobre mí</h2>
             <article class="box-img-tex">
                 <div class="box-note">
@@ -57,7 +55,7 @@
             </article>
         </section>
         <hr>
-        <section class="box-proye">
+        <section id="projects" class="box-proye">
             <h2 class="tex-proye">Proyectos</h2>
             <div class="box-carp">
                 <img class="folder" src="/assets/images/carpeta.png" alt="folder">
@@ -66,8 +64,8 @@
             </div>
         </section>
         <hr>
-        <section class="box-serv">
-            <h2 class="tex-proye">Servicios</h2>
+        <section id="services" class="box-serv">
+            <h2 class="tex-serv">Servicios</h2>
             <div class="img-serv">
                 <img class="interfaz" src="/assets/images/interfaz.png" alt="guia" width="500">
                 <img class="interfaz" src="/assets/images/interfaz.png" alt="guia" width="500">
@@ -75,7 +73,8 @@
             </div>
         </section>
         <hr>
-        <section class="contacto-formulario">
+        <section id="contact" class="contacto-formulario">
+            <div class="tar-contac">
             <div class="contacto-text">
                 <h3>Contacto</h3>
             </div>
@@ -94,11 +93,12 @@
                         placeholder="Escribe tu mensaje..."></textarea>
                         <button type="submit">Enviar mensaje</button>
                 </div>
+            </div>
 
                
             </form>
         </section>
-
+        <hr>
         <footer class="box-footer">
             <div class="cont-name">
                 <h2>Blanca Dorado</h2>

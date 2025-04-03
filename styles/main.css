@@ -46,10 +46,11 @@ html {
     display: flex;
     flex-direction: column;
     gap: 15px;
-    box-shadow: inset 8px 8px 8px #cbced1,
-    inset -8px -8px 8px #ffffff;
+    background: #e8e8e8;
+    box-shadow: 6px 6px 12px #c5c5c5, -6px -6px 12px #ffffff;
     border-radius: 5px;
     
+
 }
 
 .nav-pestanas .btn:hover {
@@ -66,33 +67,68 @@ html {
 }
 
 .nav-pestanas .btn {
-    background: rgb(235, 235, 235);
-     box-shadow: 1px 1px 3px #b5b5b5,
-             -1px -1px 3px #ffffff;
-    padding: 15px 5px;
-    cursor: pointer;
-    border-right: 1px solid #ddd;
-    border: 1px solid #ddd;
-    border-left: none;
-    text-align: center;
-    width: 40px;
-    height: 120px;
-    writing-mode: vertical-rl;
-    /* Texto vertical (de abajo a arriba) */
-    transform: rotate(180deg);
-    /* Gira el texto para leer de arriba a abajo */
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    transition: all 0.3s;
-    border-radius: 0 10px 10px 0;
+   /* Base neumórfica */
+   background: #e4e4e4;
+   border-radius: 0 12px 12px 0;
+   border: none;
+   border: 0.2px solid rgba(79, 71, 192, 0.695);
+   box-shadow: inset 5px 5px 5px #c4c4c4,
+              inset -5px -5px 5px #ffffff;
    
-
-
+   /* Forma de carpeta */
+   clip-path: polygon(
+       0% 10%,
+       15% 0%,
+       100% 0%,
+       100% 90%,
+       85% 100%,
+       0% 100%
+   );
+   
+   /* Texto vertical */
+   width: 50px;
+   height: 130px;
+   writing-mode: vertical-rl;
+   transform: rotate(180deg);
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   
+   /* Tipografía */
+   color: #3a4a52;
+   font-weight: 600;
+   letter-spacing: 1px;
+   text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.3);
+   
+   /* Transición */
+   transition: all 0.4s ease;
+   cursor: pointer;
+   position: relative;
+   overflow: hidden;
+   padding: 15px 8px;
+        
 }
 
+/* Efecto hover neumórfico */
 .nav-pestanas .btn:hover {
-    background: #c9c9c9;
+    background:  #bcc1c4;
+    box-shadow:
+        4px 4px 8px #6c7f86,
+        -4px -4px 8px #ffffff,
+        inset 1px 1px 3px rgba(255, 255, 255, 0.2),
+        inset -1px -1px 3px rgba(0, 0, 0, 0.1);
+    transform: rotate(180deg) translateX(5px);
+    color: #2c3a40;
+}
+
+/* Estado activo */
+.nav-pestanas .btn.active {
+    background:  #b0d0dc;
+    box-shadow:
+        inset 5px 5px 10px #6c7f86,
+        inset -5px -5px 10px #ffffff;
+    color: #1e2a30;
+    z-index: 2;
 }
 
 .nav-pestanas .btn a {
@@ -101,6 +137,19 @@ html {
     font-weight: bold;
 }
 
+.nav-pestanas .btn::after {
+    content: '';
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 3px;
+    height: 80%;
+    background: linear-gradient(to bottom, 
+        rgba(255,255,255,0.8), 
+        rgba(200,200,200,0.5));
+    border-radius: 2px;
+}
 
 
 
@@ -113,13 +162,10 @@ html {
     width: calc(100% - 60px);
 }
 
-/* Resaltar pestaña activa */
-.nav-pestanas .btn.active {
-    background: #7f8c8d94;
-    /* Color similar a tu menú antiguo */
-    border-color: #7f8c8d94;
+/* Efecto de profundidad al hacer clic */
+.nav-pestanas .btn:active {
+    transform: rotate(180deg) translateX(5px) scale(0.98);
 }
-
 .nav-pestanas .btn.active a {
     color: #fff;
 }
@@ -345,7 +391,7 @@ html {
     background-color: #e9e5e2;
 }
 
-.tex-serv{
+.tex-serv {
     text-align: center;
     padding: 0.5em;
     margin-bottom: 3em;
@@ -363,7 +409,7 @@ html {
     margin-bottom: 1em;
 }
 
-.interfaz{
+.interfaz {
     width: 25em;
     padding: 1em;
     background: #e0e0e0;
@@ -373,63 +419,69 @@ html {
 
 /* Contacto ------------------------------------------------------------------ */
 .contacto-formulario {
-    
+
     margin: auto;
     padding: 5em;
 
-    border-bottom: 1px solid #000000;
+
     background-color: #e9e5e2;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 
     margin-bottom: 2em;
-    
+
 
 }
 
-.tar-contac{
+.tar-contac {
     width: 100%;
     background-color: #b9a329;
-    padding: 0.5em;
+    padding: 2em;
     background: #e0e0e0;
     border: 1px solid #e8e8e8;
     box-shadow: 6px 6px 12px #c5c5c5, -6px -6px 12px #ffffff;
     font-family: cursive;
+
+
 }
 
 .contacto-text h3 {
     font-size: 5rem;
     color: black;
-   
     padding: 0.0em;
-   
+    text-align: center;
+
 
 
 }
 
 .form {
-    border: 1px solid red;
+
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .box-name {
     display: flex;
-    font-size: 2rem;
+    font-size: 1rem;
     padding: 0.2em;
     margin-bottom: 8px;
-   
+
+
 
 }
 
 .box-name input {
-    margin-left: 2em;
+    margin-left: 2.2em;
     width: 100%;
+
 
 }
 
 .box-email {
-    font-size: 2rem;
+    font-size: 1rem;
     padding: 0.2em;
-    
+    margin-bottom: 0.7em;
+
+
 }
 
 .box-email {
@@ -437,8 +489,9 @@ html {
 }
 
 .box-email input {
-    width: 74.6%;
+    width: 100%;
     margin-left: 0.5em;
+
 }
 
 .box-texta textarea {
@@ -449,6 +502,11 @@ html {
     display: flex;
 }
 
+.box-email label {
+    display: inline-block;
+
+
+}
 
 .contacto-formulario button {
     width: 50%;
@@ -463,7 +521,7 @@ html {
 
 
 .contacto-formulario button:hover {
-    background-color:#b1c9d9;
+    background-color: #b1c9d9;
 }
 
 /*Pagina Footer */

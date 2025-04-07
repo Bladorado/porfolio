@@ -12,29 +12,19 @@ html {
 /*Contenedor Principal */
 .contenedor {
     border: 1px solid rgba(0, 0, 0, 0.247);
-
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    /* display: flex; */
-    /* Nuevo: Para alinear menú lateral y contenido */
     position: relative;
-    /* Nuevo: Para posicionar el menú lateral */
 }
-
 
 /* Menú Lateral Derecho (Nuevo) */
 .menu-lateral {
     position: fixed;
-    /* left: 0;
-    top: 0; */
-    /* height: 100vh; /* Altura completa de la pantalla */
-    /* width: 60px; Ancho ajustado para texto vertical */
     display: flex;
     flex-direction: column;
     align-items: center;
     margin-left: 19px;
     margin-top: 123px;
     border-right: 1px solid #ddd;
-    /* padding-top: 20px; */
     z-index: 100;
     box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
 }
@@ -49,12 +39,43 @@ html {
     background: #e8e8e8;
     box-shadow: 6px 6px 12px #c5c5c5, -6px -6px 12px #ffffff;
     border-radius: 5px;
-    
-
 }
 
-.nav-pestanas .btn:hover {
-    background: #e0e0e0;
+.nav-pestanas .btn {
+    background: #f5ecdd;
+    border-radius: 0 12px 12px 0;
+    border: none;
+    box-shadow: inset 5px 5px 5px #f5ecdd,
+        inset -5px -5px 5px #ffffff;
+    /* Forma de carpeta */
+    clip-path: polygon(0% 10%,
+            15% 0%,
+            100% 0%,
+            100% 90%,
+            85% 100%,
+            0% 100%);
+    /* Texto vertical */
+    width: 50px;
+    height: 130px;
+    writing-mode: vertical-rl;
+    transform: rotate(180deg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    /* Tipografía */
+    color: #3a4a52;
+    font-weight: 600;
+    letter-spacing: 1px;
+    text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.3);
+
+    /* Transición */
+    transition: all 0.4s ease;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    padding: 15px 8px;
+
 }
 
 .nav-pestanas .btn a {
@@ -63,55 +84,11 @@ html {
     font-weight: bold;
     letter-spacing: 2px;
     background-color: rgb(200, 232, 233);
-    /* Espaciado entre letras */
-}
-
-.nav-pestanas .btn {
-   /* Base neumórfica */
-   background: #e4e4e4;
-   border-radius: 0 12px 12px 0;
-   border: none;
-   border: 0.2px solid rgba(79, 71, 192, 0.695);
-   box-shadow: inset 5px 5px 5px #c4c4c4,
-              inset -5px -5px 5px #ffffff;
-   
-   /* Forma de carpeta */
-   clip-path: polygon(
-       0% 10%,
-       15% 0%,
-       100% 0%,
-       100% 90%,
-       85% 100%,
-       0% 100%
-   );
-   
-   /* Texto vertical */
-   width: 50px;
-   height: 130px;
-   writing-mode: vertical-rl;
-   transform: rotate(180deg);
-   display: flex;
-   align-items: center;
-   justify-content: center;
-   
-   /* Tipografía */
-   color: #3a4a52;
-   font-weight: 600;
-   letter-spacing: 1px;
-   text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.3);
-   
-   /* Transición */
-   transition: all 0.4s ease;
-   cursor: pointer;
-   position: relative;
-   overflow: hidden;
-   padding: 15px 8px;
-        
 }
 
 /* Efecto hover neumórfico */
 .nav-pestanas .btn:hover {
-    background:  #bcc1c4;
+    background: #bcc1c4;
     box-shadow:
         4px 4px 8px #6c7f86,
         -4px -4px 8px #ffffff,
@@ -123,18 +100,12 @@ html {
 
 /* Estado activo */
 .nav-pestanas .btn.active {
-    background:  #b0d0dc;
+    background: #b0d0dc;
     box-shadow:
         inset 5px 5px 10px #6c7f86,
         inset -5px -5px 10px #ffffff;
     color: #1e2a30;
     z-index: 2;
-}
-
-.nav-pestanas .btn a {
-    text-decoration: none;
-    color: #333;
-    font-weight: bold;
 }
 
 .nav-pestanas .btn::after {
@@ -145,101 +116,24 @@ html {
     transform: translateY(-50%);
     width: 3px;
     height: 80%;
-    background: linear-gradient(to bottom, 
-        rgba(255,255,255,0.8), 
-        rgba(200,200,200,0.5));
+    background: linear-gradient(to bottom,
+            rgba(255, 255, 255, 0.8),
+            rgba(200, 200, 200, 0.5));
     border-radius: 2px;
+    background-color: #2c3a40;
 }
 
 
-
-
+/* Home Principal ---------------------------------------- */
 /* Contenido Principal - Ajuste para el menú lateral */
 .contenido-principal {
-    /* background-color: #fac8c9; */
     margin-left: 60px;
     /*Igual al ancho del menú */
     width: calc(100% - 60px);
 }
 
-/* Efecto de profundidad al hacer clic */
-.nav-pestanas .btn:active {
-    transform: rotate(180deg) translateX(5px) scale(0.98);
-}
-.nav-pestanas .btn.active a {
-    color: #fff;
-}
-
-/* Sombras para profundidad */
-.menu-lateral {
-    box-shadow: -2px 0 5px rgba(0, 0, 0, 0.1);
-}
-
-/* Eliminar el menú antiguo del header (opcional) */
-/* .cont-header .menu {
-    display: none; /* O elimina esta línea si quieres conservarlo */
-
-/* Ajustes Responsivos */
-@media (max-width: 768px) {
-    .menu-lateral {
-        width: 100%;
-        position: static;
-        transform: none;
-        border-right: none;
-        border-bottom: 1px solid #ddd;
-        padding: 10px 0;
-    }
-
-    .nav-pestanas {
-        display: flex;
-        justify-content: center;
-        flex-wrap: wrap;
-    }
-
-    .nav-pestanas .btn {
-        border-radius: 5px;
-        border-right: 1px solid #ddd;
-        margin: 5px;
-        text-align: center;
-    }
-
-    .contenido-principal {
-        width: 100%;
-        margin-left: 0;
-    }
-}
-
-/* Home Principal ---------------------------------------- */
 .cont-header {
     background-color: #e9e5e2;
-
-}
-
-.menu {
-    display: flex;
-    justify-content: space-between;
-    background-color: #7f8c8d94;
-}
-
-.nav-left {
-    width: 100%;
-    display: flex;
-    align-items: center;
-    list-style: none;
-    justify-content: space-around;
-}
-
-.btn {
-    padding: 2.5em;
-    background-image: url('/assets/images/post.png');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-}
-
-.nav-comun a {
-    text-decoration: none;
-    color: black;
 }
 
 .logo img {
@@ -257,20 +151,9 @@ html {
     box-shadow: 6px 6px 12px #c5c5c5, -6px -6px 12px #ffffff;
 }
 
-
-
-.nav-right {
-    width: 100%;
-    display: flex;
-    align-items: center;
-    list-style: none;
-    justify-content: space-around;
-}
-
 .box-header {
     display: flex;
     align-items: flex-start;
-
 }
 
 .img-arc img {
@@ -321,7 +204,6 @@ html {
     justify-content: space-evenly;
     align-items: center;
     margin-top: 4em;
-
 }
 
 .box-note {
@@ -330,16 +212,12 @@ html {
     border: 1px solid #e8e8e8;
     box-shadow: 6px 6px 12px #c5c5c5, -6px -6px 12px #ffffff;
     padding: 1em;
-
-
 }
 
 .notebook {
     margin-left: 1em;
     border-radius: 1em;
     width: 30em;
-
-
 }
 
 .box-tex {
@@ -372,8 +250,6 @@ html {
     display: flex;
     justify-content: space-around;
     margin-bottom: 2em;
-
-
 }
 
 .folder {
@@ -402,7 +278,6 @@ html {
         -20px -20px 60px #ffffff;
 }
 
-
 .img-serv {
     display: flex;
     justify-content: space-between;
@@ -419,17 +294,11 @@ html {
 
 /* Contacto ------------------------------------------------------------------ */
 .contacto-formulario {
-
     margin: auto;
     padding: 5em;
-
-
     background-color: #e9e5e2;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-
     margin-bottom: 2em;
-
-
 }
 
 .tar-contac {
@@ -440,8 +309,6 @@ html {
     border: 1px solid #e8e8e8;
     box-shadow: 6px 6px 12px #c5c5c5, -6px -6px 12px #ffffff;
     font-family: cursive;
-
-
 }
 
 .contacto-text h3 {
@@ -449,13 +316,9 @@ html {
     color: black;
     padding: 0.0em;
     text-align: center;
-
-
-
 }
 
 .form {
-
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
@@ -464,48 +327,30 @@ html {
     font-size: 1rem;
     padding: 0.2em;
     margin-bottom: 8px;
-
-
-
 }
 
 .box-name input {
     margin-left: 2.2em;
     width: 100%;
-
-
 }
 
 .box-email {
     font-size: 1rem;
     padding: 0.2em;
     margin-bottom: 0.7em;
-
-
-}
-
-.box-email {
     display: flex;
 }
 
 .box-email input {
     width: 100%;
     margin-left: 0.5em;
-
-}
-
-.box-texta textarea {
-    width: 50%;
 }
 
 .box-texta {
     display: flex;
 }
-
-.box-email label {
-    display: inline-block;
-
-
+.box-texta textarea {
+    width: 50%;
 }
 
 .contacto-formulario button {
@@ -516,53 +361,41 @@ html {
     border: none;
     border-radius: 5px;
     cursor: pointer;
-
 }
-
 
 .contacto-formulario button:hover {
     background-color: #b1c9d9;
 }
 
 /*Pagina Footer */
-
-
-
 .box-footer {
     display: flex;
     background-color: rgba(0, 0, 0, 0.836);
     padding: 3em;
     justify-content: space-evenly;
     color: #ffffff;
-
 }
-
 
 .cont-name {
     border-right: 2px solid white;
     padding-right: 1em;
     display: flex;
     align-items: center;
-
 }
+
+.box-list {}
 
 .list {
     width: 25em;
-
     display: flex;
     justify-content: space-between;
     list-style-type: none;
-
-
-
 }
 
 .copy a {
     color: #5b5454;
     text-decoration: none;
 }
-
-.box-list {}
 
 .cont-icons {
     display: flex;
@@ -572,10 +405,39 @@ html {
 
 .box-ico {
     width: 2em;
-
 }
 
 hr {
     border-bottom: 1px solid #abaa9e5d;
     margin-left: -4em;
+}
+
+/* Ajustes Responsivos */
+@media (max-width: 768px) {
+    .menu-lateral {
+        width: 100%;
+        position: static;
+        transform: none;
+        border-right: none;
+        border-bottom: 1px solid #ddd;
+        padding: 10px 0;
+    }
+
+    .nav-pestanas {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .nav-pestanas .btn {
+        border-radius: 5px;
+        border-right: 1px solid #ddd;
+        margin: 5px;
+        text-align: center;
+    }
+
+    .contenido-principal {
+        width: 100%;
+        margin-left: 0;
+    }
 }

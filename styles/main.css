@@ -23,7 +23,7 @@ html {
     flex-direction: column;
     align-items: center;
     margin-left: 19px;
-    margin-top: 123px;
+    margin-top: 50px;
     border-right: 1px solid #ddd;
     z-index: 100;
     box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
@@ -31,22 +31,25 @@ html {
 
 .nav-pestanas {
     list-style: none;
-    padding: 0;
-    margin: 0;
+    padding: 0.5em;
+    /* margin: 0; */
     display: flex;
     flex-direction: column;
-    gap: 15px;
-    background: #e8e8e8;
+    gap: 10px;
+    /* background: #c5c5c5; */
     box-shadow: 6px 6px 12px #c5c5c5, -6px -6px 12px #ffffff;
     border-radius: 5px;
+    border: 0.5px solid gray;
+
 }
 
 .nav-pestanas .btn {
+
     background: #f5ecdd;
     border-radius: 0 12px 12px 0;
     border: none;
-    box-shadow: inset 5px 5px 5px #f5ecdd,
-        inset -5px -5px 5px #ffffff;
+    /* box-shadow: inset 5px 5px 5px #f5ecdd,
+        inset -5px -5px 5px #ffffff; */
     /* Forma de carpeta */
     clip-path: polygon(0% 10%,
             15% 0%,
@@ -55,26 +58,26 @@ html {
             85% 100%,
             0% 100%);
     /* Texto vertical */
-    width: 50px;
-    height: 130px;
-    writing-mode: vertical-rl;
-    transform: rotate(180deg);
+    width: 30px;
+    height: 51px;
+    /* writing-mode: vertical-rl; */
+    /* transform: rotate(180deg); */
     display: flex;
     align-items: center;
     justify-content: center;
 
     /* Tipografía */
-    color: #3a4a52;
+    /* color: #3a4a52; */
     font-weight: 600;
-    letter-spacing: 1px;
+    /* letter-spacing: 1px; */
     text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.3);
 
     /* Transición */
     transition: all 0.4s ease;
     cursor: pointer;
     position: relative;
-    overflow: hidden;
-    padding: 15px 8px;
+    /* overflow: hidden; */
+    /* padding: 15px 8px; */
 
 }
 
@@ -82,12 +85,12 @@ html {
     text-decoration: none;
     color: #333;
     font-weight: bold;
-    letter-spacing: 2px;
-    background-color: rgb(200, 232, 233);
+
+    /* background-color: rgb(200, 232, 233); */
 }
 
 /* Efecto hover neumórfico */
-.nav-pestanas .btn:hover {
+/* .nav-pestanas .btn:hover {
     background: #bcc1c4;
     box-shadow:
         4px 4px 8px #6c7f86,
@@ -96,11 +99,11 @@ html {
         inset -1px -1px 3px rgba(0, 0, 0, 0.1);
     transform: rotate(180deg) translateX(5px);
     color: #2c3a40;
-}
+} */
 
 /* Estado activo */
 .nav-pestanas .btn.active {
-    background: #b0d0dc;
+    /* background: #b0d0dc; */
     box-shadow:
         inset 5px 5px 10px #6c7f86,
         inset -5px -5px 10px #ffffff;
@@ -114,8 +117,8 @@ html {
     right: 0;
     top: 50%;
     transform: translateY(-50%);
-    width: 3px;
-    height: 80%;
+    /* width: 3px;
+    height: 80%; */
     background: linear-gradient(to bottom,
             rgba(255, 255, 255, 0.8),
             rgba(200, 200, 200, 0.5));
@@ -126,15 +129,72 @@ html {
 
 /* Home Principal ---------------------------------------- */
 /* Contenido Principal - Ajuste para el menú lateral */
+
 .contenido-principal {
     margin-left: 60px;
-    /*Igual al ancho del menú */
-    width: calc(100% - 60px);
+    
 }
 
-.cont-header {
-    background-color: #e9e5e2;
+.contenedor-header{
+    background-color: #0e0c0a;
 }
+.cont-header {
+   width: 100%;
+   height: 100%;
+    background-image: url('/assets/images/archi1.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: #e9e5e2;
+    position: relative;
+    
+   
+}
+
+.menu-lateral-2 {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    list-style: none;
+
+   
+    padding: 20em;
+   
+}
+
+.nav-pestanas-2 .btn {
+    position: absolute;
+    left: 51.3%; /* O ajusta según la imagen */
+    width: 100px; /* Ajusta si quieres que tengan todos el mismo tamaño */
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-align: center;
+    transition: background-color 0.3s;
+}
+
+.btn1 { top: 54px; }
+.btn2 { top: 204px; }
+.btn3 { top: 351px; }
+.btn4 { top: 480px; }
+.btn5 { top: 575px; }
+
+
+
+
+
+
+
+
+
+.nav-pestanas-2 .btn:hover {
+    background-color: rgba(255, 255, 255, 1);
+}
+
+ul.nav-pestanas-2 {
+    list-style: none !important;
+}
+
 
 .logo img {
     width: 5em;
@@ -157,7 +217,7 @@ html {
 }
 
 .img-arc img {
-    width: 45em;
+    width: 17em;
     margin-left: 4em;
     margin-right: 2em;
     margin-top: 1em;
@@ -349,6 +409,7 @@ html {
 .box-texta {
     display: flex;
 }
+
 .box-texta textarea {
     width: 50%;
 }

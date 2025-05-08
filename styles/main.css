@@ -103,7 +103,21 @@ html {
 /* Estilo base para todos los iconos */
 .icono {
     position: absolute;
-    left: 54.6%;  
+    left: 47.8%;  
+    z-index: 10; 
+    font-size: 1.5em; 
+    pointer-events: none; 
+    background: #bcc1c4;
+    box-shadow:
+    4px 4px 8px #6c7f86,
+    -4px -4px 8px #ffffff,
+    inset 1px 1px 3px rgba(255, 255, 255, 0.2),
+    inset -1px -1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.iconos{
+    position: absolute;
+    left: 60.3%;  
     z-index: 10; 
     font-size: 1.5em; 
     pointer-events: none; 
@@ -116,11 +130,11 @@ html {
 }
 
 /* Posicionamiento individual */
-.icono1 { top: 74px; }   /* Icono de Home */
-.icono2 { top: 189px; }  /* Icono de Sobre mí */
-.icono3 { top: 297px; }  /* Icono de Proyectos */
-.icono4 { top: 420px; }  /* Icono de Servicios */
-.icono5 { top: 533px; }  /* Icono de Contacto */
+.icono1 { top: 71px; }   /* Icono de Home */
+.icono2 { top: 188px; }  /* Icono de Sobre mí */
+.icono3 { top: 296px; }  /* Icono de Proyectos */
+.icono4 { top: 421px; }  /* Icono de Servicios */
+.icono5 { top: 538px; }  /* Icono de Contacto */
 
 .cont-header {
     width: 100%;
@@ -138,11 +152,11 @@ html {
 }
 
 .cont-archivador{
-    width: 18em;
+    width: 38em;
     background-color: #bcc1c4;
     position: relative;
-    top:1px;
-    left: 763px;
+    top:-1px;
+    left: 621px;
     box-shadow:
     6px 6px 10px -1px rgba(0, 0, 0, 0.15),
     -6px -6px 10px -1px rgba(255, 255, 255, 0.7);
@@ -151,7 +165,7 @@ html {
 
 .nav-pestanas-2 .btn {
     position: absolute;
-    left: 51.3%;
+    left: 44.1%;
     background: #bcc1c4;
     box-shadow:
     4px 4px 8px #6c7f86,
@@ -164,16 +178,35 @@ html {
     font-family: cursive;
 }
 
+.btnpr{
+    position: absolute;
+    left: 57.1%;
+    background: #bcc1c4;
+    box-shadow:
+    4px 4px 8px #6c7f86,
+    -4px -4px 8px #ffffff,
+    inset 1px 1px 3px rgba(255, 255, 255, 0.2),
+    inset -1px -1px 3px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: background-color 0.3s;
+    width: 6em;
+    font-family: cursive;
+}
+
+.btnpr a{
+    text-decoration: none;
+    color: #1e2a30;
+}
 .nav-pestanas-2 .btn a{
     text-decoration: none;
     color: #1e2a30;
 }
 
-.btn1 { top: 133px; } /*Boton Home*/
-.btn2 { top: 244px; } /*Boton Sobre mí*/
-.btn3 { top: 357px; } /*Boton Proyectos*/
-.btn4 { top: 479px; } /*Boton Servicios*/
-.btn5 { top: 591px; } /*Boton Contacto*/
+.btn1 { top: 129px; } /*Boton Home*/
+.btn2 { top: 245px; } /*Boton Sobre mí*/
+.btn3 { top: 355px; } /*Boton Proyectos*/
+.btn4 { top: 482px; } /*Boton Servicios*/
+.btn5 { top: 599px; } /*Boton Contacto*/
 
 .nav-pestanas-2 .btn:hover {
     box-shadow: inset 2px 2px 5px #bcbcbc, inset -2px -2px 5px #ffffff, 2px 2px 5px #bcbcbc, -2px -2px 5px #ffffff;
